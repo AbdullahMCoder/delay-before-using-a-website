@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Do you really want to use that site?",
+    "version": "1.0",
+    "description": "Wait...",
+    "permissions": ["storage", "scripting","storage"],
+    "host_permissions": ["https://*/*"],
+    "content_scripts": [
+      {
+        "matches": [
+            "https://www.youtube.com/*",
+            "https://www.reddit.com/*",
+            "https://www.x.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["popup.html", "countDown.js"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+  }
+  
