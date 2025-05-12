@@ -10,7 +10,7 @@
         "matches": [
             "https://www.youtube.com/*",
             "https://www.reddit.com/*",
-            "https://www.m.youtube.com/*",
+            "https://m.youtube.com/*",
             "https://www.x.com/*",
             "https://www.tiktok.com/*"
 
