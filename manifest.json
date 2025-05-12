@@ -3,14 +3,17 @@
     "name": "Do you really want to use that site?",
     "version": "1.0",
     "description": "Wait...",
-    "permissions": ["storage", "scripting","storage"],
+    "permissions": ["storage", "scripting"],
     "host_permissions": ["https://*/*"],
     "content_scripts": [
       {
         "matches": [
             "https://www.youtube.com/*",
             "https://www.reddit.com/*",
-            "https://www.x.com/*"
+            "https://www.m.youtube.com/*",
+            "https://www.x.com/*",
+            "https://www.tiktok.com/*"
+
         ],
         "js": ["content.js"]
       }
